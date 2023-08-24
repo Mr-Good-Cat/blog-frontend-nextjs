@@ -1,5 +1,5 @@
 import { getMainCategory } from "@/api/blog/mainCategory.get";
-import MainCategoryPage from "@/app/[mainCategorySlug]/page";
+import MainCategoryPage from "@/app/(main-category)/[mainCategorySlug]/page";
 
 export default async function Home() {
   const mainCategoryList = await getMainCategory();
