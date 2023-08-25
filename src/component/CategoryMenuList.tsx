@@ -16,8 +16,6 @@ function CategoryMenuList({
     return null;
   }
 
-  console.log(segment, allCategories);
-
   const categoryList = allCategories[segment];
 
   return (
