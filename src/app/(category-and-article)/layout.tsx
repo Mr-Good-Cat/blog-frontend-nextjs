@@ -1,5 +1,3 @@
-import CategoryMenuList from "@/components/CategorySidebar/CategoryMenuList";
-import { getAllCategories } from "@/api/blog/allCategories.get";
 import CategorySidebar from "@/components/CategorySidebar";
 
 export default function CategoryLayout({
