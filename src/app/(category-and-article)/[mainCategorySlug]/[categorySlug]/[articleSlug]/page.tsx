@@ -1,6 +1,6 @@
 import { article as articleRequest } from "@/api/blog/article.get";
 import Link from "next/link";
-import ChevronRight from "@/components/ChevronRight";
+import ChevronRight from "@/components/icons/ChevronRight";
 
 export default async function ArticlePage({
   params,
