@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { getMainCategory } from "@/api/blog/mainCategory.get";
+import NavLink from "@/components/NavLink";
 
 export default async function MainCategorySidebar() {
   const mainCategoryList = await getMainCategory();
@@ -11,13 +11,15 @@ export default async function MainCategorySidebar() {
       <ul>
         {mainCategoryList.map((mc) => {
           return (
-            <Link
+            <NavLink
               key={mc.id}
               href={mc.url}
-              className="mr-2 text-gray-700 hover:text-blue-300"
+              className="mr-2 hover:text-blue-300"
+              notActiveClass="text-gray-700"
+              activeClass="text-blue-500"
             >
               <li>{mc.title}</li>
-            </Link>
+            </NavLink>
           );
         })}
       </ul>
