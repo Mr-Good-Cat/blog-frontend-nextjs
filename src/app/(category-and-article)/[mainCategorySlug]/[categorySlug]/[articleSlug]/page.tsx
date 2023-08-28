@@ -1,5 +1,6 @@
 import { article as articleRequest } from "@/api/blog/article.get";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Markdown from "@/components/Markdown/Markdown";
 
 export default async function ArticlePage({
   params,
@@ -23,7 +24,10 @@ export default async function ArticlePage({
       <h3 className="text-center font-semibold text-xl mb-2">
         {article.title}
       </h3>
-      <div>{article.description}</div>
+
+      <div>
+        <Markdown text={article.description} />
+      </div>
     </div>
   );
 }
