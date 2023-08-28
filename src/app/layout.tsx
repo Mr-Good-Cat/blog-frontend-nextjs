@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { getMainCategory } from "@/api/blog/mainCategory.get";
+import Logo from "@/components/icons/Logo";
+import { homePageUrl } from "@/helpers/router";
 
 export const metadata: Metadata = {
   title: "Index page",
@@ -20,15 +22,8 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <header className="flex bg-white border w-full border-gray-300 p-4 items-center">
-          <Link href="/">
-            <Image
-              className="mr-14"
-              src="/next.svg"
-              alt="Next.js Logo"
-              width={180}
-              height={37}
-              priority
-            />
+          <Link href={homePageUrl()}>
+            <Logo />
           </Link>
           <div className="flex items-center ">
             <ul className="flex items-center">
