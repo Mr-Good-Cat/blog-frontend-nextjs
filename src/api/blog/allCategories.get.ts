@@ -19,7 +19,7 @@ export type AllCategoriesGet = {
 };
 
 export async function getAllCategories(): Promise<AllCategoriesGet> {
-  const res = await fetch("http://localhost:3000/blog/all-categories");
+  const res = await fetch(`${process.env.apiDomain}/blog/all-categories`);
 
   const json = await res.json();
 

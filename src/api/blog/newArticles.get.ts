@@ -20,7 +20,7 @@ export async function newArticles(
   mainCategorySlug: string,
 ): Promise<NewArticlesGet[]> {
   const res = await fetch(
-    `http://localhost:3000/blog/new-articles/${mainCategorySlug}`,
+    `${process.env.apiDomain}/blog/new-articles/${mainCategorySlug}`,
   );
 
   return res.json();

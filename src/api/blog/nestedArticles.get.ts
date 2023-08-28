@@ -23,7 +23,7 @@ export async function nestedArticles(
   categorySlug: string,
 ): Promise<NewArticlesGet[]> {
   const res = await fetch(
-    `http://localhost:3000/blog/${mainCategorySlug}/${categorySlug}/articles`,
+    `${process.env.apiDomain}/blog/${mainCategorySlug}/${categorySlug}/articles`,
   );
 
   return res.json();

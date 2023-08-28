@@ -29,7 +29,7 @@ export async function article(
   articleSlug: string,
 ): Promise<ArticleGet> {
   const res = await fetch(
-    `http://localhost:3000/blog/${mainCategorySlug}/${categorySlug}/${articleSlug}`,
+    `${process.env.apiDomain}/blog/${mainCategorySlug}/${categorySlug}/${articleSlug}`,
   );
 
   return res.json();

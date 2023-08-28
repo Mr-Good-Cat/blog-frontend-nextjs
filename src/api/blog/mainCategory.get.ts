@@ -13,7 +13,7 @@ export type MainCategoryGet = {
 };
 
 export async function getMainCategory(): Promise<MainCategoryGet[]> {
-  const res = await fetch("http://localhost:3000/blog/main-category");
+  const res = await fetch(`${process.env.apiDomain}/blog/main-category`);
 
   return res.json();
 }
