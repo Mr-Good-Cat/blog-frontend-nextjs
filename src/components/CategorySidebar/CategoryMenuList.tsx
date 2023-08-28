@@ -2,7 +2,6 @@
 
 import { useSelectedLayoutSegment } from "next/navigation";
 import { AllCategoriesGet } from "@/api/blog/allCategories.get";
-import Link from "next/link";
 import { MainCategoryGet } from "@/api/blog/mainCategory.get";
 import NavLink from "@/components/NavLink";
 
