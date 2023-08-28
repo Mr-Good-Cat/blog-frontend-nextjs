@@ -11,7 +11,7 @@ export default function Breadcrumbs({
     <div className="flex overflow-y-auto whitespace-nowrap items-center">
       <Link
         href="/"
-        className="underline text-blue-300 hover:text-blue-500 mr-2"
+        className="underline text-blue-500 hover:text-blue-300 mr-2"
       >
         Home
       </Link>
@@ -26,7 +26,7 @@ export default function Breadcrumbs({
             <Link
               href={b.url}
               key={b.url}
-              className="underline text-blue-300 hover:text-blue-500 mr-2"
+              className="underline text-blue-500 hover:text-blue-300 mr-2"
             >
               {b.title}
             </Link>
