@@ -1,4 +1,4 @@
-import CategoryMenuList from "@/component/CategoryMenuList";
+import CategoryMenuList from "@/components/CategoryMenuList";
 import { getAllCategories } from "@/api/blog/allCategories.get";
 
 export default async function CategoryLayout({
