@@ -13,3 +13,4 @@ One of three repositories to deploy a simple blog.
 
 
 ## Instructions to run the project with Docker
+Command: `docker-compose up` and then visit `localhost:3002`
